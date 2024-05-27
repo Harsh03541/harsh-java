@@ -1,0 +1,52 @@
+VAPT vulnerabiliry assessment and penetration testing.
+they both are different.
+
+
+types of internet 1. internet 2. intranet 3. extranet 
+
+
+cross side scripting
+
+server side scripting
+
+
+cyber crime govt portal
+1930 cyber crime portal govt of india
+
+
+
+types of users in windows
+1. admin
+2. standard.
+3. guest 
+
+UAC- User Account Control
+
+
+
+SAM - system account manager
+
+password breaking files
+sam file 
+system file - keep the encryption 
+
+location is same for sam and system files
+
+
+
+password view - ophcrack
+password remove - hirenboot
+
+
+malware analysis
+
+rat - remote admin tools (trojan)
+
+keyloggers- software and hardware
+
+
+cyberspoof
+
+
+
+

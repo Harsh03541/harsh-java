@@ -1,0 +1,21 @@
+create the following tables along with the required constraints 
+region with region_id , region_name, 
+country with country id , country name and region 
+locations with location id , street , postal code , city , state , country id , 
+department with dept id , dept name , manager id , location id , 
+employee with employee id , last name , email, phone , first name , job id , salary , manager id , and dept id
+job with job id , job title , min salary, max salary , 
+job history with employee id , job start date, job end date, location id and dept id 
+
+solve following queries
+1. find the address (location id , street , city , state, and country name ) of all the departments 
+2. find the first name and last name as well as dept id and name of dept for which employees are working 
+3. find the first name and last name, job id , dept id, name of dept , of all the employees, who are working in punjab state 
+4. find the employee id and last name along with the respective manager id  
+5. find the name , and hire date of employee who are hired after lokesh 
+6. find the cdept name and the no. of empployees in thuer respective depts.
+7. retrieve dept id , dept name and also find the name of respective manager 
+8. display dept name , manger name and their city , 
+9. find the job title and average salary of employees 
+10. find job title , employees names and min salary of jobes 
+11. find the job done by any employee whose earnig is greater than thousand. 
