@@ -1,57 +1,57 @@
 public class Quick_sort {
 
     public static int partition(int arr[], int start, int end) {
-        
+
         int pivot = arr[start];
-        int count=0;
-        
-        for(int i=start+1; i<=end; i++) {
-            if(arr[i] < pivot)
+        int count = 0;
+
+        for (int i = start + 1; i <= end; i++) {
+            if (arr[i] < pivot)
                 count++;
         }
         int pivotIndex = start + count;
 
-          //put pivot element at correct position
-          int temp = pivot;
-          arr[start] = arr[pivotIndex];
-          arr[pivotIndex] = temp;
+        // put pivot element at correct position
+        int temp = arr[pivotIndex];
+        arr[pivotIndex] = arr[start];
+        arr[start] = temp;
 
-          int startIndex = start;
-          int endIndex = end;   
+        int startIndex = start;
+        int endIndex = end;
 
-          while (startIndex < pivotIndex && endIndex > pivotIndex) {
-            while (startIndex < pivotIndex) {
+        while (startIndex < pivotIndex && endIndex > pivotIndex) {
+            while (arr[startIndex] < pivot) {
                 startIndex++;
             }
-            while (endIndex > pivotIndex) {
+            while (arr[endIndex] > pivot) { 
                 endIndex--;
             }
-            if(startIndex < pivotIndex && endIndex > pivotIndex) { 
+            if (startIndex < pivotIndex && endIndex > pivotIndex) {
                 temp = arr[startIndex];
                 arr[startIndex] = arr[endIndex];
                 arr[endIndex] = temp;
-
                 startIndex++;
                 endIndex--;
             }
-          }
-          return pivotIndex;
+        }
+        return pivotIndex;
     }
 
     public static void quickSort(int arr[], int start, int end) {
-        //base case
-        if(start >= end) {
-            return ;
+        // base case
+        if (start >= end) {
+            return;
         }
         int p = partition(arr, start, end);
 
         // left part sort:
-        quickSort(arr, start, p-1);
+        quickSort(arr, start, p - 1);
 
         // right part sort:
-        quickSort(arr, p+1, end);
-        
+        quickSort(arr, p + 1, end);
+
     }
+
     public static void main(String[] args) {
 
         System.out.println("Program: Quick Sort-");
